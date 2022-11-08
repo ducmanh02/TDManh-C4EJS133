@@ -1,0 +1,75 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    height: 80px;
+    width: 90%;
+    margin-left: 100px;
+    background-color: rgb(52, 38, 38);
+    color: white;
+    position: relative;
+    float: left;
+    border-radius: 10px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar> ul li{
+    list-style: none; 
+    border-right: 1px solid #ccc;
+    border-left:1px solid #333;
+}
+.navbar> ul li a{
+    display: block;
+    padding: 0 25px;
+    line-height: 50px;
+    color: #f1f2f3;
+    text-decoration: none;
+}
+.navbar ul li:first-child {
+    border-left: none; 
+}
+.navbar> ul li:first-child a{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.navbar ul li:hover>a{
+    background: red;
+    opacity: 0.7;
+    color: yellow;
+}
+.navbar li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+
+
+
+.navbar li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    text-align: left;
+}
+.navbar li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar li>ul li:last-child a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar  li:hover > ul{
+    display:  block;
+}
+.navbar > ul li > ul li >ul{
+    margin-left: 310px;
+    margin-top: -50px;
+}
