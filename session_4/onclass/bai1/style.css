@@ -1,0 +1,124 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 60%;
+    height: 480px;
+    background-color: #dadada;
+    margin: auto;
+}
+.bigTitle{
+    width: 100%;
+    height: 80px;
+    background-color: #07a5ae;
+    line-height: 80px;
+    font-size: 18px;
+    color: #fff;
+    
+}
+.bigTitle h1{
+    padding-left: 5%;
+}
+.mainContent{
+    margin: 10px 5%;
+}
+.mainContent > .smallTitle{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.list__items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.items{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+
+}
+img{
+    width: 100%;
+}
+.nameandprice__items{
+    margin-top: 15px;
+    color: rgb(145, 15, 145);
+    
+    font-weight: bolder;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.name__items{
+    font-size: 14px;
+    width: 49%;
+}
+.price__items{
+    background-color: rgb(244, 156, 244);
+    font-size: 14px;
+    font-style: italic;
+    width: 49%;
+}
+.scp__items{
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+button{
+    background-color: #07a5ae;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.6;
+}
+
+.hr-1{
+    width: 100%;
+    border-top: 1px solid #07a5ae;
+}
+.fter{
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+@media  only screen  and (max-width:425px) {
+    .container{
+        height: 1100px;
+    }
+    .list__items{
+        display: grid;
+        grid-template-columns : auto;
+        gap: 20px;
+    }
+}
+@media  only screen and (min-width:425px) and (max-width:768px) {
+    .container{
+        height: 1100px;
+    }
+    .list__items{
+        display: grid;
+        grid-template-columns : auto;
+        gap: 20px;
+    }
+}
+@media  only screen and (min-width:768px) and (max-width:1024px) {
+    .container{
+        height: 800px;
+    }
+    .list__items{
+        display: grid;
+        grid-template-columns : auto auto;
+        gap: 20px;
+    }
+}
