@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #0f9d58;
+    --backgound-color: #f0f3f7;
+    --secon-color: #9da2ad;
+    --grey: #7a7a7a;
+    --white: #ffffff;
+  }
+  
+  * {
+    box-sizing: inherit;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  body,
+  html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+    background-color: var(--backgound-color);
+  }
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color:var(--backgound-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0  #9da2ad;
+    margin-bottom: 30px;
+}
+.navbar h1{
+    color: #0f9d58;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.menubar{
+    display: flex;
+    width: 30%;
+    justify-content:space-between;
+}
+.menubar h2{
+    color:#7a7a7a;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+}
+.menubar__items:hover h2 {
+    background-color: #0f9d58;
+    color: #f0f3f7;
+}
+
+/* menu food */
+.menufood{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+.bigTitle h1{
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+.scp{
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 30px 0;;
+}
+.categogy-food{
+    display: flex;
+    
+    justify-content: start;
+}
+.categogy-food__items{
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+    border: #0f9d58 solid 2px;
+    border-radius: 10px;
+    margin: 0 20px;
+    color: #0f9d58;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.categogy-food__items:hover {
+    background-color: #0f9d58;
+    color: #f0f3f7;
+}
+.food-container{
+    width: 90%;
+    /* height: 80vh; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    /* background-color:; */
+}
+
+/* food-item */
+.food-item {
+    width: 240px;
+    height: 280px;
+}
+.image-container{
+    height: 60%;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+.img01, .img08, .img06{
+    background-image: url(./img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
+}
+.img02, .img04, .img07{
+    background-image: url(./img/carly-jayne-Lv174o7fn7Y-unsplash.jpg);
+}
+.img03{
+    background-image:url(./img/jonathan-farber-OCNqOLeCwOc-unsplash.jpg);
+}
+.img05{
+    background-image: url(./img/sina-piryae-bBzjWthTqb8-unsplash.jpg);
+}
+.scp-food{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+.nameandprice{
+    font-size: 14px;
+    color: #9da2ad;
+    
+}
+
+@media screen  and (max-width:600px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: auto;
+    }
+}
+@media screen  and (min-width:600px) and (max-width:992px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+    }
+}
