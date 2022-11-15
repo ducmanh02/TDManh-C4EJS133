@@ -11,6 +11,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    position: relative;
   }
   body,
   html {
@@ -85,7 +86,6 @@ body{
 .categogy-food{
     display: flex;
     
-    justify-content: start;
 }
 .categogy-food__items{
     width: 100px;
@@ -105,6 +105,7 @@ body{
 .food-container{
     width: 90%;
     /* height: 80vh; */
+    
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -114,18 +115,24 @@ body{
 
 /* food-item */
 .food-item {
+    /* position: relative; */
     width: 240px;
     height: 280px;
 }
 .image-container{
     height: 60%;
 }
-.image{
+ .image{
+    /* position: absolute; */
     width: 100%;
     height: 100%;
     background-size: cover;
     transition: 0.5s ease-in-out;
+    z-index: 0;
 }
+/* .food-item .image:hover{
+    transform: scale(1.5) rotate(45deg);
+} */
 .img01, .img08, .img06{
     background-image: url(./img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
 }
@@ -143,6 +150,7 @@ body{
     justify-content: space-between;
     margin-top: 30px;
     padding: 0px 15px;
+    
 }
 .nameandprice{
     font-size: 14px;
@@ -156,11 +164,21 @@ body{
         grid-template-columns: 100%;
         margin: auto;
     }
+    .menubar{
+        display: none;
+    }
+    
+    .categogy-food{
+        overflow-y: scroll;
+    }
 }
 @media screen  and (min-width:600px) and (max-width:992px) {
     .food-container{
         display: grid;
         grid-template-columns: 50% 50%;
         margin: auto;
+    }
+    .menubar{
+        width: 50%;
     }
 }
