@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        let n = Number(prompt("Nhập số N:"));
+        let m = Number(prompt("Nhập số M:"));
+        function UCLN(a,b){
+            while(a!=b){
+                if(a>b){
+                    a=a-b;
+                }
+                else {
+                    b=b-a;
+                }
+            }
+            return b;
+        }
+        alert(UCLN(n,m) + " " + (n*m)/UCLN(n,m))
+    </script>
+</body>
+</html>
