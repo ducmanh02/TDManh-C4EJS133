@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 6</title>
+</head>
+<body>
+    <script>
+        arrayData = [
+          {
+            id: 1,
+            name: "Nguyen Van A",
+            age: 15,
+            point: 200,
+            address: "Ha Noi",
+          },
+          {
+            id: 2,
+            name: "Nguyen Van B",
+            age: 16,
+            point: 100,
+            address: "Ha Nam",
+          },
+          {
+            id: 3,
+            name: "Nguyen Van C",
+            age: 17,
+            point: 400,
+            address: "Ha Noi",
+          },
+          {
+            id: 4,
+            name: "Nguyen Van D",
+            age: 18,
+            point: 250,
+            address: "Cao Bang",
+          },
+        ];
+        let arrayAddress = arrayData.filter(function (arrayData) {
+          return arrayData.address === "Ha Noi";
+        });
+        for (let a of arrayAddress) {
+          console.log(
+            `STT: ${a.id} - Ho Ten : ${a.name} - ${a.age} tuoi - ${a.point} diem - dia diem: ${a.address}`
+          );
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 3</title>
+  </head>
+  <body>
+    <script>
+      arrayData = [
+        {
+          id: 1,
+          name: "Nguyen Van A",
+          age: 15,
+          point: 200,
+        },
+        {
+          id: 2,
+          name: "Nguyen Van B",
+          age: 16,
+          point: 100,
+        },
+        {
+          id: 3,
+          name: "Nguyen Van C",
+          age: 17,
+          point: 400,
+        },
+        {
+          id: 4,
+          name: "Nguyen Van D",
+          age: 18,
+          point: 250,
+        },
+      ];
+      arrayData.sort(function (a, b) {
+        return a.point - b.point;
+      });
+      for (let a of arrayData) {
+        console.log(
+          `STT: ${a.id} - Ho Ten : ${a.name} - ${a.age} tuoi - ${a.point} diem`
+        );
+      }
+    </script>
+  </body>
+</html>
