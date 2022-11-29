@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3</title>
+</head>
+<body>
+    <ul id="list">
+        <h1> dong 1</h1>
+        <h1> dong 2</h1>
+        <h1> dong 3</h1>
+    </ul>
+    
+
+    <button id="btn" onclick="remove_function()">Click me to remove the first item</button>
+
+    <script>
+
+        remove_function = () =>{
+            let x = document.getElementById("list");
+            x.removeChild(x.firstElementChild);
+        }  
+    </script>
+    
+</body>
+</html>

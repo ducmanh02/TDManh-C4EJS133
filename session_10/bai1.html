@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+</head>
+<body>
+    <h1>Hãy nhập từ 1 đến 10</h1>
+    <input type="text" id="inputNumber">
+    <button id="btn" onclick="myFunction()">Submit</button>
+    <br>
+    <span id="error"></span>
+    <script>
+        myFunction = () =>{
+            let x =document.getElementById("inputNumber").value;
+        if(x>0 && x<=10){
+            document.getElementById("error").innerHTML="Success";
+            document.getElementById("error").style.padding = "0px";
+            document.getElementById("error").style.color = "white";
+            document.getElementById("error").style.backgroundColor = "green";
+            
+
+
+        }
+        else{
+            document.getElementById("error").innerHTML="Vui lòng nhập lại";
+            document.getElementById("error").style.padding = "0px";
+            document.getElementById("error").style.color = "white";
+            document.getElementById("error").style.backgroundColor = "red";
+            
+        }
+        }
+
+        var input = document.getElementById("inputNumber");
+        input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("btn").click();
+        }
+        });
+
+    </script>
+</body>
+</html>
