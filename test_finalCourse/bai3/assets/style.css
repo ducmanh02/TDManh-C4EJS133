@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.main{
+    padding: 100px;
+    
+}
+.header{
+        margin-bottom:70px ;
+}
+.title{
+    height: 64px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search{
+    width: 20%;
+}
+.search > i{
+    position: absolute;
+    font-size: 22px;
+    left: 110px;
+    top: 178px;
+} 
+input[type="text"]{
+    width: 100%;
+    padding: 15px 0px 15px 35px;
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+}
+.user__tag{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.user__tag--item{
+    padding: 15px;
+    border-radius: 5px;
+}
+.float{
+    background-color: #849FFF;
+    color: white;
+}
+
+
+.list__users{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:16px;
+}
+.items__user{
+    background-color: #FBFCFF;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+
+}
+.avatar__user{
+    background: url(./user1.png)  center no-repeat;
+    background-size: cover;
+    width: 97px;
+    height: 97px;
+    border-radius: 50%; 
+}
+.avatar__user.user-2{
+    background: url(./user2.png)  center no-repeat;
+    background-size: cover;
+}
+.avatar__user.user-3{
+    background: url(./user3.png)  center no-repeat;
+    background-size: cover;
+}
+.avatar__user.user-4{
+    background: url(./user4.png)  center no-repeat;
+    background-size: cover;
+}
+.avatar__user.user-5{
+    background: url(./user5.png)  center no-repeat;
+    background-size: cover;
+}
+.avatar__user.user-6{
+    background: url(./user6.png)  center no-repeat;
+    background-size: cover;
+}
+.detail__user{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    width: 70%;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+
+.items__user.onFocus{
+    border: 1px solid #BFC8E5;
+    background-color: white;
+    box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+}
+.name__user{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+}
+.address__user{
+    font-size: 14px;
+    font-weight: 500px;
+}
+
+.tag__user{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.tag__user > span{
+    font-size: 12px;
+    line-height: 18px;
+    color: #516FD4;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    padding : 2px 8px ;
+
+}
